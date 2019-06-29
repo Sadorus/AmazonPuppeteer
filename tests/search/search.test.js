@@ -1,9 +1,9 @@
 const puppeteer = require('puppeteer');
-const SearchPage = require('../page_objects/SearchPage');
+const SearchPage = require('../../page_objects/SearchPage');
 // eslint-disable-next-line prefer-destructuring
-const getText = require('../lib/helpers').getText;
+const getText = require('../../lib/helpers').getText;
 // eslint-disable-next-line prefer-destructuring
-const scrollToElement = require('../lib/helpers').scrollToElement;
+const scrollToElement = require('../../lib/helpers').scrollToElement;
 
 const searchPage = new SearchPage();
 
