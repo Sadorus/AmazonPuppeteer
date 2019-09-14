@@ -1,12 +1,15 @@
 pipeline {
   agent any
-  tools {nodejs "RecentNode"}
   stages {
     stage('error') {
       steps {
-        sh '''npm install
+        sh '''export PATH=$PATH:/usr/local/bin
+npm install
 jest test'''
       }
     }
+  }
+  tools {
+    nodejs 'RecentNode'
   }
 }
