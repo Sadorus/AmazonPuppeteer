@@ -5,6 +5,7 @@ pipeline {
       steps {
         sh '''export PATH=$PATH:/usr/local/bin
 npm install
+ldd chrome | grep not
 npm test'''
       }
     }
