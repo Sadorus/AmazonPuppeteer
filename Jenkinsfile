@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh '''export PATH=$PATH:/usr/local/bin
 npm install
-jest test'''
+npm test'''
       }
     }
   }
