@@ -7,7 +7,7 @@ const searchPage = new SearchPage();
 
 beforeEach(async () => {
   browser = await puppeteer.launch({
-    headless: false,
+    headless: true,
     timeout: 10000,
     slowMo: 0,
     defaultViewport: null,
