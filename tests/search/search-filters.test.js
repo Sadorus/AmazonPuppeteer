@@ -11,6 +11,10 @@ beforeEach(async () => {
     timeout: 10000,
     slowMo: 0,
     defaultViewport: null,
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+    ],
   });
   page = await browser.newPage();
   await page.goto(searchPage.searchPath);

@@ -12,6 +12,10 @@ beforeEach(async () => {
     headless: false,
     timeout: 7000,
     slowMo: 0,
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+    ],
   });
   page = await browser.newPage();
   jest.setTimeout(30000);
